@@ -35,5 +35,20 @@ public class Excercise1ArraysSaturday25_02_2023 {
             }
             System.out.println("]");
         }
+        // 4. Dwuwymiarowa tablica char. Utwórz dwuwymiarową tablicę char o rozmiarze 4x2. Zapisz wartości do tablicy za pomocą bloku inicjalizacyjnego.
+        //Wydrukuj wartości z tablicy.
+        char[][] znaki = {
+                {'A', 'b', 'C','D'},
+                {'E', 'F', 'G','H'},
+                {'I', 'J', 'K','L'},
+        };
+        for (int i = 0; i < znaki.length; i++) {
+            System.out.print("[ ");
+            for (int j = 0; j < znaki[i].length; j++) {
+
+                System.out.print(znaki[i][j] + ", ");
+            }
+            System.out.println("]");
+        }
     }
 }
