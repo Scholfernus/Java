@@ -9,12 +9,13 @@ public class Reader {
     private Date dateOfBirth;
     private int phoneNumber;
 
-    public static void takeBook(String name, int numbOfBook) {
-        System.out.printf("%s wypożyczył %d książek(ki).\n", name, numbOfBook);
+    public void takeBook( int numbOfBook) {
+        System.out.printf("%s wypożyczył %d książek(ki).\n", this.fullName, numbOfBook);
     }
-    public static void takeBook(String name,int howMany, String book){
-        System.out.printf("%s wziął %d książek(ki): %s\n",name,howMany,book);
+    public void takeBook(int howMany, String book){
+        System.out.printf("%s wziął %d książek(ki): %s\n",this.fullName,howMany,book);
     }
+
     public static void returnBook() {
     }
 

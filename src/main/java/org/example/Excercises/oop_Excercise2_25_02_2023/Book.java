@@ -8,4 +8,12 @@ public class Book {
         this.bookName = bookName;
         this.author = author;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
 }
